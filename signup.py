@@ -6,6 +6,9 @@ class SignUp:
         username = input("Please type a desired username: ")
         password = input("Please type your password: ")
         super_user = input("Please enter the Super User Password (hint: toor): ")
-        credFile.write("Username:"+ username + "\nPassword:"+ password)
+        credFile.write("Username:" + username)
+        credFile.write("Password:" + password)
         print("Account saved as", username, password)
         credFile.close()
+
+

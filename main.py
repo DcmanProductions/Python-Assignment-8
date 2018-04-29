@@ -8,9 +8,8 @@ class Main:
         if prompt.startswith("/"):
             if prompt.lower() == "/login":
                 print("Okay we'll get you logged in")
-                username = input("Please enter your Username: ")
-                password = input("Please Enter your password: ")
-                log = authentication.Authenticated(username, password)
+
+                log = authentication.Authenticated()
             elif prompt.lower() == "/signup":
                 print("Okay we can do that, but you will need super user authorization")
                 sign = signup.SignUp()
